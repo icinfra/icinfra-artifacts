@@ -42,7 +42,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."  # 直接将 `deploy` 分支下的文件/文件夹上传
+          path: "./_site"
 
       - name: Deploy to GitHub Pages
         id: deployment
